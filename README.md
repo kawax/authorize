@@ -1,4 +1,5 @@
 # Authorize HTTP Client Manager for Laravel
+[![Build Status](https://travis-ci.org/kawax/authorize.svg?branch=master)](https://travis-ci.org/kawax/authorize)
 
 Work in progress.
 
