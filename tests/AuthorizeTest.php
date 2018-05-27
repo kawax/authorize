@@ -52,13 +52,23 @@ class AuthorizeTest extends TestCase
         $this->assertInstanceOf(GuzzleClient::class, $client);
     }
 
+    public function testWithOutLaravel()
+    {
+        $manager = new AuthorizeManager(null);
+
+        $login = $manager->driver()->login();
+        $client = $manager->driver()->client();
+
+        $this->assertTrue($login);
+        $this->assertInstanceOf(GuzzleClient::class, $client);
+    }
+
     public function testCredentials()
     {
-        $credentials = new Credentials;
-        $credentials->login = 'test';
+        $credentials = new Credentials(['login' => 'login']);
         $credentials->pass = 'pass';
 
-        $this->assertEquals('test', $credentials->login);
+        $this->assertEquals('login', $credentials->login);
         $this->assertEquals('pass', $credentials->pass);
     }
 }
