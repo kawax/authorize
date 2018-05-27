@@ -23,7 +23,7 @@ class ValueCommerceDriver extends AbstractDriver
     /**
      * Login.
      *
-     * @param \Revolution\Authorize\Credentials $credentials
+     * @param mixed $credentials
      *
      * @return bool
      */

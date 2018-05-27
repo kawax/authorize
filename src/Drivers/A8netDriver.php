@@ -22,7 +22,7 @@ class A8netDriver extends AbstractDriver
     /**
      * Login.
      *
-     * @param \Revolution\Authorize\Credentials $credentials
+     * @param mixed $credentials
      *
      * @return bool
      */

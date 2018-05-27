@@ -2,6 +2,7 @@
   "name": "revolution/authorize",
   "description": "Authorize HTTP Client Manager for Laravel",
   "keywords": [
+    "authorize",
     "HTTP client",
     "guzzle",
     "goutte",
