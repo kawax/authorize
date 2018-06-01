@@ -1,4 +1,4 @@
-# Authorize HTTP Client Manager for Laravel
+# Authorize HTTP Client Manager
 [![Build Status](https://travis-ci.org/kawax/authorize.svg?branch=master)](https://travis-ci.org/kawax/authorize)
 
 Work in progress.
@@ -28,12 +28,12 @@ https://github.com/kawax/authorize-project
          * @var \Goutte\Client $client
          */
         $client = Authorize::driver('sample')->client();
+        // client with login cookie.
         dump($client);
     }
 ```
 
 See demo project and docs.
-
 
 ## LICENSE
 MIT  
