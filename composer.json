@@ -1,5 +1,5 @@
 {
-  "name": "revolution/authorize",
+  "name": "revolution/authorize-manager",
   "description": "Authorize HTTP Client Manager for Laravel",
   "keywords": [
     "authorize",
