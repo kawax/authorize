@@ -3,24 +3,19 @@
 namespace Revolution\Authorize\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Contracts\Support\DeferrableProvider;
 
 use Revolution\Authorize\AuthorizeManager;
 use Revolution\Authorize\Contracts\Factory;
 
-class AuthorizeServiceProvider extends ServiceProvider
+class AuthorizeServiceProvider extends ServiceProvider implements DeferrableProvider
 {
-    /**
-     * Indicates if loading of the provider is deferred.
-     *
-     * @var bool
-     */
-    protected $defer = true;
-
     /**
      * Boot the service provider.
      */
     public function boot()
     {
+        //
     }
 
     /**

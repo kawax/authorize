@@ -4,7 +4,7 @@ namespace Tests;
 
 use Mockery as m;
 
-use Authorize;
+use Revolution\Authorize\Facades\Authorize;
 
 use Revolution\Authorize\AuthorizeManager;
 use Revolution\Authorize\Drivers\DefaultDriver;
@@ -14,12 +14,12 @@ use GuzzleHttp\Client as GuzzleClient;
 
 class AuthorizeTest extends TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         m::close();
     }
