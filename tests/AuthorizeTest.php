@@ -26,7 +26,7 @@ class AuthorizeTest extends TestCase
 
     public function testManager()
     {
-        $manager = new AuthorizeManager(null);
+        $manager = new AuthorizeManager(app());
 
         $this->assertInstanceOf(AuthorizeManager::class, $manager);
     }
@@ -54,7 +54,7 @@ class AuthorizeTest extends TestCase
 
     public function testWithOutLaravel()
     {
-        $manager = new AuthorizeManager(null);
+        $manager = new AuthorizeManager(app());
 
         $login = $manager->driver()->login();
         $client = $manager->driver()->client();
