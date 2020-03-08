@@ -1,5 +1,5 @@
 # Authorize HTTP Client Manager
-[![Build Status](https://travis-ci.org/kawax/authorize-manager.svg?branch=master)](https://travis-ci.org/kawax/authorize-manager)
+[![Build Status](https://travis-ci.com/kawax/authorize-manager.svg?branch=master)](https://travis-ci.com/kawax/authorize-manager)
 
 Work in progress.
 
